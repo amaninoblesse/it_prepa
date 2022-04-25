@@ -1,0 +1,156 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Preparation concours</title>
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+    <script src="{% static 'assets/js/main.js' %}" defer></script>
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">PrepaIT</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">COURS</a></li>
+                    <li><a href="#">QUIZ</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">MASTER</a></li>
+                    <li><a href="#">LICENCE</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Entrez un texte">
+                <a href="#"> <button class="btn">Recherche</button></a>
+            </div>
+
+        </div> 
+        <div class="content">
+            <h1>Prepa Licence & <br><span>Master</span> </h1>
+            <p class="par">Augmentez vos chances de réussir au concours de l'ESATIC. Niveaux  
+                 Licence et Master <br> Une formation assurée par les alumnis de l'ESATIC. 
+                <br> Toutes les matières de compositions</p>
+
+                <button class="cn"><a href="#">INFO+</a></button>
+
+                <div class="form">
+                    <h2>Connectez vous</h2>
+                    <input type="email" name="email" placeholder="Entrez votre mail">
+                    <input type="password" name="password" placeholder="Entrez votre mot de passe">
+                    <button class="btnn"><a href="#">Se connecter</a></button>
+
+                    <p class="link">Pas de compte<br>
+                    <a href="{% url 'it:register' %}">Inscrivez </a> vous</a></p>
+                    <p class="liw">Se connecter avec</p>
+
+                    <div class="icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                    </div>
+
+                </div>
+        </div>
+
+        
+        <div style="display: flex; margin-left: 400px;margin-top: 210px; " class="child" >
+
+            <div>         
+
+                        <!-- Previous Button -->
+                <button id="prev-btn" >
+                    <i class="fas fa-arrow-circle-left"></i>
+                </button>
+
+            </div>
+
+
+                <!-- Book -->
+                <div id="book" class="book" >
+                    <!-- Paper 1 -->
+                    <div id="p1" class="paper">
+                        <div class="front"  style="border-right: 5px solid; border-radius: 15px 15px 15px 15px;">
+                            <div id="f1" class="front-content">
+                                <h1>Prepa IT</h1>
+                            </div>
+                        </div>
+                        <div class="back"  style="border-right: 5px solid; border-radius: 15px 15px 15px 15px;">
+                            <div id="b1" class="back-content">
+                                <h1>Master</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Paper 2 -->
+                    <div id="p2" class="paper">
+                        <div class="front"  style="border-right: 5px solid; border-radius: 15px 15px 15px 15px;">
+                            <div id="f2" class="front-content">
+                                <h1>Licence</h1>
+                            </div>
+                        </div>
+                        <div class="back"  style="border-right: 5px solid; border-radius: 15px 15px 15px 15px;">
+                            <div id="b2" class="back-content">
+                                <h1>Informatique</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Paper 3 -->
+                    <div id="p3" class="paper"  >
+                        <div class="front"  style="border-right: 5px solid; border-radius: 15px 15px 15px 15px;">
+                            <div id="f3" class="front-content">
+                                <h1>Mathématiques</h1>
+                            </div>
+                        </div>
+                        <div class="back"  style="border-right: solid; border-radius: 15px 15px 15px 15px;">
+                            <div id="b3" class="back-content">
+                                <h1>Fin</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>   
+
+                <!-- Next Button -->
+                <button id="next-btn">
+                    <i class="fas fa-arrow-circle-right"></i>
+                </button>
+
+            </div>
+
+        </div>  
+
+
+        <footer >
+            <p>Contacts : +225 0142662716/+225 0758907023 <br>
+             Mail: kouakounoeamani1@gmail.com</p>
+        </footer>
+       
+
+    </div>    
+
+        </div>
+
+     
+    </div>
+
+
+    
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
