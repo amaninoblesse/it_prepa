@@ -49,9 +49,12 @@
 
                 <div class="form">
                     <h2>Connectez vous</h2>
-                    <input type="email" name="email" placeholder="Entrez votre mail">
-                    <input type="password" name="password" placeholder="Entrez votre mot de passe">
-                    <button class="btnn"><a href="#">Se connecter</a></button>
+                    <form action="{% url 'it:login_request' %}" method="POST">
+                        {% csrf_token %}
+                        <input type="text" name="username" placeholder="Entrez votre matricule">
+                        <input type="password" name="password" placeholder="Entrez votre mot de passe">
+                        <button class="btnn" type="submit" >Se connecter</button>
+                    </form>
 
                     <p class="link">Pas de compte<br>
                     <a href="{% url 'it:register' %}">Inscrivez </a> vous</a></p>

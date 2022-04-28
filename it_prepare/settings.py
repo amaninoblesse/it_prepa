@@ -28,6 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['itprepa.herokuapp.com']
 
+# ALLOWED_HOSTS = []
+
 
 # Application definition
 
@@ -70,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'it_prepare.wsgi.application'
+# WSGI_APPLICATION = 'it_prepare.wsgi.application'
 
 
 # Database

@@ -40,13 +40,13 @@
                       <div class="row">
                         <div class="col-md-6 mb-4">
                           <div class="form-outline">
-                            <input type="text" id="form3Example1m" class="form-control form-control-lg" name="first_name" />
+                            <input type="text" id="form3Example1m" class="form-control form-control-lg" name="first_name" required />
                             <label class="form-label" for="form3Example1m">Prénom</label>
                           </div>
                         </div>
                         <div class="col-md-6 mb-4">
                           <div class="form-outline">
-                            <input type="text" id="form3Example1n" class="form-control form-control-lg" name="last_name" />
+                            <input type="text" id="form3Example1n" class="form-control form-control-lg" name="last_name" required />
                             <label class="form-label" for="form3Example1n">Nom</label>
                           </div>
                         </div>
@@ -55,20 +55,20 @@
                       <div class="row">
                         <div class="col-md-6 mb-4">
                           <div class="form-outline">
-                            <input type="text" id="form3Example1m1" class="form-control form-control-lg" name="first_number" />
+                            <input type="text" id="form3Example1m1" class="form-control form-control-lg" name="first_number" required />
                             <label class="form-label" for="form3Example1m1">Téléphone 1</label>
                           </div>
                         </div>
                         <div class="col-md-6 mb-4">
                           <div class="form-outline">
-                            <input type="text" id="form3Example1n1" class="form-control form-control-lg" name="second_number" />
+                            <input type="text" id="form3Example1n1" class="form-control form-control-lg" name="second_number" required />
                             <label class="form-label" for="form3Example1n1">Téléphone 2</label>
                           </div>
                         </div>
                       </div>
       
                       <div class="form-outline mb-4">
-                        <input type="text" id="form3Example8" class="form-control form-control-lg" name="mail" />
+                        <input type="text" id="form3Example8" class="form-control form-control-lg" required name="mail" />
                         <label class="form-label" for="form3Example8">Mail</label>
                       </div>
       
@@ -83,6 +83,7 @@
                             name="inlineRadioOptions"
                             id="femaleGender"
                             value="option1"
+                            required
                           />
                           <label class="form-check-label" for="femaleGender">Femme</label>
                         </div>
@@ -104,7 +105,7 @@
                       <div class="row">
                         <div class="col-md-6 mb-4">
       
-                          <select class="select" name="city">
+                          <select class="select" name="city" required >
                             <option value="1">Ville</option>
                             <option value="2">Abidjan</option>
                             <option value="3">Toumodi</option>
@@ -114,7 +115,7 @@
                         </div>
                         <div class="col-md-6 mb-4">
       
-                          <select class="select" name="sector">
+                          <select class="select" name="sector" required >
                             <option value="1">Commune</option>
                             <option value="2">Treichville</option>
                             <option value="3">Yopougon</option>
@@ -125,17 +126,17 @@
                       </div>
       
                       <div class="form-outline mb-4">
-                        <input type="text" id="form3Example9" class="form-control form-control-lg" name="school"/>
+                        <input type="text" id="form3Example9" class="form-control form-control-lg" name="school"required />
                         <label class="form-label" for="form3Example9">Lycée/Collège/Université/Grande école</label>
                       </div>
       
                       <div class="form-outline mb-4">
-                        <input type="text" id="form3Example90" class="form-control form-control-lg" name="level" />
+                        <input type="text" id="form3Example90" class="form-control form-control-lg" name="level" required />
                         <label class="form-label" for="form3Example90">Niveau</label>
                       </div>
       
                       <div class="form-outline mb-4">
-                        <input type="text" id="form3Example99" class="form-control form-control-lg" name="classe"/>
+                        <input type="text" id="form3Example99" class="form-control form-control-lg" name="classe" required />
                         <label class="form-label" for="form3Example99">Classe</label>
                       </div>
       
@@ -143,6 +144,16 @@
                         <input type="text" id="form3Example97" class="form-control form-control-lg" name="info_sup" />
                         <label class="form-label" for="form3Example97">Info supplémentaire</label>
                       </div>
+                                 
+                        {% if form.errors %}
+                         {% for field in form %}
+                            {% for error in field.errors %} 
+                            <div class="alert alert-danger">
+                                    <strong>{{ error|escape }}</strong>
+                            </div>
+                            {% endfor %}
+                         {% endfor %}
+                        {% endif %}
       
                       <div class="d-flex justify-content-end pt-3">
                         <button type="button" class="btn btn-light btn-lg">Tout rénitialiser</button>

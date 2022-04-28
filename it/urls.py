@@ -20,7 +20,13 @@ from . import views
 
 app_name='it'
 urlpatterns = [
-    path('', views.index,name='index'),
+    path('home/', views.home,name='home'),
     path('register/', views.register,name='register'),
+    path('success/', views.success,name='success'),
+    path('fail/', views.fail,name='fail'),
+    path('login/', views.login_request,name='login_request'),
+    path('quiz/', views.quiz,name='quiz'),
+    # path('logout/', views.logout,name='logout'),
+
      
 ]
