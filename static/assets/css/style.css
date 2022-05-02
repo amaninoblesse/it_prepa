@@ -478,6 +478,13 @@ footer p {
     display: none;
 }
 
+/* .video{
+    padding-top: 75px;
+    width: 100%;
+    height: 700px;
+    background-color: black;
+} */
+
 
 /* RESPONSIVE MANAGEMENT */
 @media only screen and (max-width: 600px) {
@@ -485,6 +492,7 @@ footer p {
     body {
         /* border: solid; */
         width: 1300px;
+        zoom: 34%;
     }
 
   
@@ -586,7 +594,7 @@ footer p {
     .formular{
        
 
-        left: 60px;
+        left: 420px;
         transform: translate(0%,-5%);
         border-radius: 10px;
         padding: 25px;
@@ -594,7 +602,7 @@ footer p {
     
 
     footer p {
-        margin-left: 20px;
+        margin-left: 400px;
     }
 
     .child{
