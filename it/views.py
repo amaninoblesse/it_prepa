@@ -9,6 +9,10 @@ from django.contrib.auth import login, authenticate #add this
 def home(request):
     return render(request,'it/main/index.html')
 
+def connexion(request):
+    return render(request,'it/main/connexion.html')
+
+
 def quiz(request):
     return render(request,'it/main/quiz.html')
 

@@ -26,6 +26,7 @@ urlpatterns = [
     path('fail/', views.fail,name='fail'),
     path('login/', views.login_request,name='login_request'),
     path('quiz/', views.quiz,name='quiz'),
+    path('connexion/', views.connexion,name='connexion'),
     # path('logout/', views.logout,name='logout'),
 
      

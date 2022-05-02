@@ -26,9 +26,9 @@ SECRET_KEY = 'django-insecure-qy(9gw6)61d5ikbk946jueai1g2sqha)nt3&ycxk6-c0nv8@mx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['itprepa.herokuapp.com']
+# ALLOWED_HOSTS = ['itprepa.herokuapp.com']
 
-# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -78,12 +78,12 @@ TEMPLATES = [
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 
 # DATABASES = {
@@ -100,16 +100,16 @@ TEMPLATES = [
 # }
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd1k8826vp4kmlm',
-        'USER': 'lfikauvwbbhvcq',
-        'PASSWORD': '39cb07f24deea65e054f617a2281060067e04894a94c3956ba3b656b5fb49942',
-        'HOST': 'ec2-52-18-116-67.eu-west-1.compute.amazonaws.com',
-        'PORT': '5432',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'd1k8826vp4kmlm',
+#         'USER': 'lfikauvwbbhvcq',
+#         'PASSWORD': '39cb07f24deea65e054f617a2281060067e04894a94c3956ba3b656b5fb49942',
+#         'HOST': 'ec2-52-18-116-67.eu-west-1.compute.amazonaws.com',
+#         'PORT': '5432',
+#     }
+# }
 
 
 

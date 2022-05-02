@@ -1,0 +1,70 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Preparation concours</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+    <script src="{% static 'assets/js/main.js' %}" defer></script>
+    <script src="{% static 'assets/js/menu.js' %}" defer></script>
+</head>
+<body>
+
+    <div class="main" style="border: solid;">
+              
+                <div class="formular">
+                    <h2>Connectez vous</h2>
+                    <form action="{% url 'it:login_request' %}" method="POST">
+                        {% csrf_token %}
+                        <input class="in" type="text" name="username" placeholder="Entrez votre matricule" required >
+                        <input class="in_" type="password" name="password" placeholder="Entrez votre mot de passe" required >
+                        <button class="btnn" type="submit" >Se connecter</button>
+                    </form>
+
+                    <p class="link">Pas de compte<br>
+                    <a href="{% url 'it:register' %}">Inscrivez </a> vous</a></p>
+                    <p class="liw">Se connecter avec</p>
+
+                    <div class="icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                    </div>
+
+                </div>
+        </div>
+
+     
+
+        </div>  
+
+
+        <footer id="foot" >
+            <p>Contacts : +225 0142662716/+225 0758907023 <br>
+             Mail: kouakounoeamani1@gmail.com</p>
+        </footer>
+       
+
+    </div>    
+
+        </div>
+
+     
+    </div>
+
+
+    
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

@@ -5,7 +5,7 @@
 
 .main{
     /* width: 100%; */
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.925)50%,rgba(0,0,0,0.925)50%), url(1.jpg);
+    background: white;
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -23,7 +23,7 @@
     height: 70px;
 }
 
-.logo{
+/* .logo{
     color: #ff7200;
     font-size: 35px;
     font-family: Arial;
@@ -31,26 +31,28 @@
     float: left;
     padding-top: 10px;
     margin-top: 5px
-}
+} */
 
-.menu{
-    width: 400px;
+/* .menu{
+    width: 450px;
     float: left;
     height: 70px;
-}
+} */
 
 ul{
     float: left;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
 }
 
 ul li{
     list-style: none;
-    margin-left: 62px;
+    margin-left: 30px;
     margin-top: 27px;
     font-size: 14px;
+    
 }
 
 ul li a{
@@ -59,6 +61,7 @@ ul li a{
     font-family: Arial;
     font-weight: bold;
     transition: 0.4s ease-in-out;
+    color: black;
 }
 
 ul li a:hover{
@@ -68,8 +71,11 @@ ul li a:hover{
 .search{
     width: 330px;
     float: left;
-    margin-left: 50px;
+    margin-left: 30px;
+    margin-right: 70px;
 }
+
+
 
 .srch{
     font-family: 'Times New Roman';
@@ -118,6 +124,17 @@ ul li a:hover{
     margin: auto;
     color: #fff;
     position: relative;
+    margin-left:130px ;
+}
+
+.content::after {
+    content: '';
+    width: 10px;
+    height: 64%;
+    background-color: #ff7200;
+    position: absolute;
+    left: -30px;
+    top: 20px;
 }
 
 .content .par{
@@ -126,6 +143,7 @@ ul li a:hover{
     font-family: Arial;
     letter-spacing: 1.2px;
     line-height: 30px;
+    color: black;
 }
 
 .content h1{
@@ -134,6 +152,7 @@ ul li a:hover{
     padding-left: 20px;
     margin-top: 9%;
     letter-spacing: 2px;
+    color: black;
 }
 
 .content .cn{
@@ -165,19 +184,56 @@ ul li a:hover{
     font-size: 65px
 }
 
+/* .content p{
+    color: black;
+    font-size: 65px
+} */
+
 .form{
     width: 290px;
     height: 460px;
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
     position: absolute;
     top: -20px;
-    left: 870px;
+    left: 815px;
     transform: translate(0%,-5%);
     border-radius: 10px;
     padding: 25px;
 }
 
+.formular{
+    width: 290px;
+    height: 460px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: 105px;
+    left: 550px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+
+
+.OnRight{
+    display: none;
+}
+
+
+
 .form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.formular h2{
     width: 220px;
     font-family: sans-serif;
     text-align: center;
@@ -204,12 +260,36 @@ ul li a:hover{
     font-family: sans-serif;
 }
 
+.formular input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
 .form input:focus{
     outline: none;
 }
 
-::placeholder{
-    color: #fff;
+.formular input:focus{
+    outline: none;
+}
+
+.in::placeholder{
+    color: white;
+    font-family: Arial;
+}
+
+.in_::placeholder{
+    color: white;
     font-family: Arial;
 }
 
@@ -240,7 +320,15 @@ ul li a:hover{
     padding-top: 20px;
     text-align: center;
 }
-.form .link a{
+
+.formular .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+.formular .link a{
     text-decoration: none;
     color: #ff7200;
 }
@@ -248,6 +336,7 @@ ul li a:hover{
     padding-top: 15px;
     padding-bottom: 10px;
     text-align: center;
+    color: white;
 }
 .icons a{
     text-decoration: none;
@@ -372,14 +461,6 @@ i {
 
 
 
-
-
-
-
-
-
-
-
 footer {
   display: flex;
   justify-content: center;
@@ -392,3 +473,141 @@ footer {
 footer p {
     margin-left: 450px;
 }
+
+.menu-icon{
+    display: none;
+}
+
+
+/* RESPONSIVE MANAGEMENT */
+@media only screen and (max-width: 600px) {
+
+    body {
+        /* border: solid; */
+        width: 1300px;
+    }
+
+  
+
+    .menu ul{
+        display: block;
+        float: right;
+         width: 100%;
+        /* background: black ;  */
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+
+    .menu ul li{
+ 
+        display: block;
+        padding-left: 400px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .menu ul li a{
+        color: white;
+        font-size: 50px;
+    }
+    /* .child
+    {
+        padding-top: 10%;
+        padding-bottom: 2%;
+    } */
+    
+    .search {
+        display: none;
+    }
+
+    .form{
+        display: none;
+    }
+
+    .OnRight{
+        display: block;
+        width: 400px;
+        height: 460px;
+        /* background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%); */
+        position: absolute;
+        top: -20px;
+        left: 450px;
+        transform: translate(0%,-5%);
+        border-radius: 10px;
+        padding: 25px;
+    }
+
+    .concours{
+        margin-top: 50px;
+        height: 300px;
+    }
+
+    .bottom-left {
+        position: absolute;
+        bottom: 130px;
+        left: 246px;
+        font-size: 90px;
+        font-weight: 800;
+        transform: rotate(-06deg);
+      }
+
+    /* ul li{
+    
+        margin-left: -15px;
+
+        
+    } */
+
+    
+    .menu-icon{
+        display: block;
+        width: 100px;
+        cursor: pointer;
+        margin-right: 150px;
+    
+    }
+
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .content .par{
+        width: 600px;
+        font-size: 25px;
+        /* color: #b7b7b7; */
+
+    }
+
+    .formular{
+       
+
+        left: 60px;
+        transform: translate(0%,-5%);
+        border-radius: 10px;
+        padding: 25px;
+    }
+    
+
+    footer p {
+        margin-left: 20px;
+    }
+
+    .child{
+        padding-top: -50px;
+        /* border: solid; */
+    }
+
+
+    /*
+    .logo_{
+        width: 10px;
+        margin: 30px 0;
+    } */
+    
+    
+    }
