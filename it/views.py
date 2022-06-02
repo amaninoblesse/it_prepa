@@ -9,6 +9,37 @@ from django.contrib.auth import login, authenticate #add this
 def home(request):
     return render(request,'it/main/index.html')
 
+def blog_single(request):
+    return render(request,'it/main/blog-single.html')
+
+
+
+def newconnexion(request):
+    return render(request,'it/main/newconnexion.html')
+
+def about(request):
+    return render(request,'it/main/about.html')
+    
+def blog(request):
+    return render(request,'it/main/blog.html')
+
+def contact(request):
+    return render(request,'it/main/contact.html')
+
+def teacher(request):
+    return render(request,'it/main/teacher.html')
+
+def courses(request):
+    return render(request,'it/main/courses.html')
+
+def contact(request):
+    return render(request,'it/main/contact.html')
+
+
+
+def newhome(request):
+    return render(request,'it/main/newindex.html')
+
 def connexion(request):
     return render(request,'it/main/connexion.html')
 

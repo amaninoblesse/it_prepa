@@ -26,9 +26,9 @@ SECRET_KEY = 'django-insecure-qy(9gw6)61d5ikbk946jueai1g2sqha)nt3&ycxk6-c0nv8@mx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['itprepa.herokuapp.com']
+# ALLOWED_HOSTS = ['itprepa.herokuapp.com']
 
-# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-# WSGI_APPLICATION = 'it_prepare.wsgi.application'
+WSGI_APPLICATION = 'it_prepare.wsgi.application'
 
 
 # Database
@@ -103,10 +103,10 @@ TEMPLATES = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd1k8826vp4kmlm',
-        'USER': 'lfikauvwbbhvcq',
-        'PASSWORD': '39cb07f24deea65e054f617a2281060067e04894a94c3956ba3b656b5fb49942',
-        'HOST': 'ec2-52-18-116-67.eu-west-1.compute.amazonaws.com',
+        'NAME': 'd1lm5tbcoab6dv',
+        'USER': 'thejietayyicyh',
+        'PASSWORD': '5a308893e15c3b115490d99a6be0422df274b97b39c998f2ce9a7351a5754b32',
+        'HOST': 'ec2-54-228-125-183.eu-west-1.compute.amazonaws.com',
         'PORT': '5432',
     }
 }

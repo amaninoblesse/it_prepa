@@ -21,6 +21,18 @@ from . import views
 app_name='it'
 urlpatterns = [
     path('home/', views.home,name='home'),
+    path('newhome/', views.newhome,name='newhome'),
+    path('newconnexion/', views.newconnexion,name='newconnexion'),
+    path('about/', views.about,name='about'),
+    path('blog/', views.blog,name='blog'),
+    path('contact/', views.contact,name='contact'),
+    path('teacher/', views.teacher,name='teacher'),
+    path('courses/', views.courses,name='courses'),
+    path('blog_single/', views.blog_single,name='blog_single'),
+
+
+
+
     path('register/', views.register,name='register'),
     path('success/', views.success,name='success'),
     path('fail/', views.fail,name='fail'),
